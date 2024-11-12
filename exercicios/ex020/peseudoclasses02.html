@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-classes02</title>
+    <style>
+        div > p{
+            display: none;
+
+        }
+        div:hover > p{
+            display:block;
+            background-color: red;
+            color: white;
+            width: 300px
+
+        }
+    
+        div:hover{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Site interativo</h1>
+    <p>Arraste o mouse no para o paragrafo abaixo</p>
+    <div>Coloque o mouse aqui e terá uma surpresa
+        <p>gay kkkkkkk</p>
+    </div>
+</body>
+</html>
