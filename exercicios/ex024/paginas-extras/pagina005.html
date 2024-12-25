@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <style>
+        body{
+            background-color: rgb(0, 107, 107);
+            font-family: arial;
+        }
+
+        a{
+            color: #000;
+            font-weight: bold;
+            text-decoration: none;
+            font-size: 1.4em;
+        }
+    </style>
+</head>
+<body>
+    <a href="#" onclick="clicou()">Clique em mim</a>
+    <div id="saida"></div>
+
+    <script>
+        function clicou(){
+            s = window.document.getElementById("saida")
+            s.innerHTML += "<p>Seu pc foi hackeado!</p>"
+        }
+    </script>
+</body>
+</html>
