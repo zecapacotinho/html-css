@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+</head>
+<body>
+    <h1>Tipos de Formulários</h1>
+    <form action="cadastro.php" method="get">
+        <p>
+            <label for="icor">Cor:</label>
+            <input type="color" name="cor" id="icor" value="#00ffff">
+        </p>
+        <p>
+            <label for="iran">Nível de satisfação</label>
+            <input type="range" name="ran" id="iran" min="1" max="10">
+        </p>
+        <p>
+            <label for="ifoto"></label>
+            <input type="file" name="foto" id="ifoto">
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Apagar">
+        </p>
+    </form>
+</body>
+</html>
