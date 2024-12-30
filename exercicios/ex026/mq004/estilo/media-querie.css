@@ -67,6 +67,11 @@
     body{
         background-image: url(../imagens/back-tv.jpg);
     }
+
+    main{
+        width: 600px;
+    }
+
     #phone{
         display: none;
     }
