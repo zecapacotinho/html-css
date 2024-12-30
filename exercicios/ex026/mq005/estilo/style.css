@@ -19,8 +19,21 @@ header h1{
     padding: 10px;
 }
 
-nav{
+#burguer{
+    background-color: rgb(24, 24, 24);
     display: block;
+    padding: 10px;
+    color: #fff;
+    cursor: pointer;
+}
+
+#burguer:hover{
+    background-color: #fff;
+    color: #000;
+}
+
+nav{
+    display: none;
     background-color: rgb(51, 51, 51);
 }
 
@@ -44,9 +57,10 @@ nav a:hover{
 main{
     background-color: #fff;
     margin: auto;
+    margin-top: 20px;
     border-radius: 10px;
     padding: 20px;
-    width: 90vw;
+    width: 80vw;
 }
 
 main p{
