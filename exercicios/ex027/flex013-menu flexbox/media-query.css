@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+@media screen and (max-width: 600px){
+
+    header, header nav{
+        flex-flow: column nowrap;
+        justify-content: space-around;
+    }
+
+    header h1{
+        flex-basis: 50px;
+        text-align: center;
+    }
+
+    nav{
+        display: none;
+    }
+
+    nav a{
+        display: block;
+        text-align: center;
+        background-color: #3b9676;
+        margin-top: 10px;
+        border-radius: 10px;
+        position: relative;
+        right: 2.5%;
+    }
+
+    #menu{
+        cursor: pointer;
+        display: block;
+        text-align: center;
+    }
+
+    main{
+        width: 90vw;
+    }
+}

@@ -5,11 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu em flexbox</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media-query.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=menu" />
 </head>
-<body>
+<body onresize="mudouTamanho()">
     <header>
         <h1>DN1-Code</h1>
-        <nav>
+        <span id="menu" onclick="clickMenu()" class="material-symbols-outlined">
+            menu
+        </span>
+        <nav id="intens">
             <a href="#">Home</a>
             <a href="#">Contatos</a>
             <a href="#">Projetos</a>
@@ -19,9 +24,28 @@
         </nav>
     </header>
     <main>
+        <h2>Teste de flexbox</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis aut adipisci distinctio explicabo ratione repellat quas, voluptates nesciunt modi cupiditate corrupti fugit ducimus aperiam ex, error voluptate quia, saepe placeat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores atque at accusamus sit iure tempora quo dolore vero incidunt officia. Nulla modi, dolores ad ipsum ipsam beatae illum eius totam.</p>
 
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe inventore reprehenderit nemo tenetur. Culpa dolorum, amet ducimus nulla soluta maxime velit cum beatae, provident quod, laudantium magni. Magnam, deleniti magni? Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis assumenda doloremque, libero, explicabo nisi facilis est vitae tenetur, ipsam dolore quam praesentium dignissimos necessitatibus quia nemo officiis amet magnam non!</p>
     </main>
+
+    <script>
+        function clickMenu(){
+            if (intens.style.display == "block"){
+                intens.style.display = "none"
+            } else{
+                intens.style.display = "block"
+            }
+        }
+
+        function mudouTamanho(){
+            if (window.innerWidth >= 600){
+                intens.style.display = "block"
+            } else{
+                intens.style.display = "none"
+            }
+        }
+    </script>
 </body>
 </html>
